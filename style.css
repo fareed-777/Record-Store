@@ -1,0 +1,627 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: yellow;
+    height: 100px;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: yellow;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.search-container {
+    display: flex;
+    position: relative;
+}
+
+/* good */
+.search-box {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    width: 220px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    font-size: 13px;
+    outline: none;
+    margin-left: 20px;
+}
+
+
+.search-button {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mainlogo {
+    justify-content: center;
+    text-align: center;
+}
+
+.text-logo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    font-style: italic;
+    color: red;
+    margin: 0;
+}
+
+.navbar-links {
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+
+}
+
+.navbar-links a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.nav-link {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .search-box {
+        width: 220px;
+        margin-top: 0;
+    }
+
+    .search-button {
+        margin-left: 20px;
+    }
+
+    .mainlogo {
+        margin-bottom: 0;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .nav-link {
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+}
+
+/* -----------------------------------NAVBAR END----------------- */
+.navigation {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: yellow;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.navigationchild1 {
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 100px;
+}
+
+.navigationchild2 {
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 150px;
+}
+
+.navigationchild3 {
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 100px;
+}
+
+.navigationchild4 {
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 100px;
+}
+
+.navigationchild5 {
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 100px;
+}
+
+.dropbtn {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: font-size 0.4s ease;
+}
+
+.dropbtn:hover {
+    font-size: 16px;
+    
+
+}
+
+@media only screen and (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(rgb(255, 230, 0), rgba(219, 154, 0, 0.618));
+    }
+
+    .navigationchild1,
+    .navigationchild2,
+    .navigationchild3,
+    .navigationchild4,
+    .navigationchild5 {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* -----------------------------------navigation end----------------------- */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow {
+    display: flex;
+    height: 400px;
+    /* max-width: 800px; Adjust the max-width as needed */
+    width: 100%;
+}
+
+.artist {
+    background-color: rgb(0, 0, 0);
+    background: rgb(242, 255, 0);
+    /* background: linear-gradient(27deg, rgba(241, 255, 0, 1) 0%, rgba(231, 166, 0, 1) 50%, rgba(255, 149, 0, 1) 100%); */
+    width: 50%;
+
+    flex: 1;
+
+}
+
+.albumcover {
+    background-color: aqua;
+    /* background-image: url(ab67616d0000b273b46f74097655d7f353caab14.jpg); */
+    /* background-size: contain; */
+    background: url('Nuovo-progetto-6.webp') center/100% 100% no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    flex: 1;
+
+}
+
+.animate-charcter {
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #ff6600 0%,
+            #44107a 29%,
+            #ff0000 67%,
+            #ff00dd 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 80px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.artistdetails {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 20px;
+    border: 0px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.btn:hover {
+    /* border: 1px solid rgba(0, 0, 0, 0.542);
+    background-color: rgb(255, 0, 0); */
+
+}
+
+.animated-char {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .slideshow {
+        flex-direction: row;
+    }
+
+    .artist {
+        order: 2;
+    }
+
+    .albumcover {
+        order: 1;
+    }
+
+    .artist {
+        display: none;
+    }
+
+    /* Additional styles for better mobile layout */
+    .artistdetails {
+        text-align: center;
+    }
+}
+
+/* ------------------------slideshow----------------- */
+
+.marquee-container {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    /* Set the height as needed */
+    overflow: hidden;
+}
+
+.marquee-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 0, 0);
+    /* Set the background color */
+    z-index: -1;
+    /* Move the background behind the marquee text */
+}
+
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    /* Set the font size as needed */
+    color: #ffffff;
+    /* Set the text color as needed */
+    animation: marquee 10s linear infinite;
+    text-align: center;
+    /* Adjust duration as needed */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .marquee {
+        font-size: 18px;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+/* -------------------------------------------------------End OF MArqueee----------------------------------------------------------- */
+.vinyl-container{
+    display: flex;
+    text-wrap: wrap;
+    background-color: yellow;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    text-align: center;
+}
+.vinyl-container h2{
+    font-size: 50px;
+    font-family: fantasy;
+ 
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------Cards----------------------------------------------------------------------------- */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin: 20px auto; */
+    width: 100%; /* Adjust width as needed */
+    background-color: yellow;
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: #FFE53B;
+background-image: linear-gradient(147deg, #ffd500 25%, #ff0000 74%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 15px;
+    width: 20%; /* Adjust width for desired number of cards per row */
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 250px; /* Adjust height as needed */
+    object-fit: cover; /* Scales image to fill container */
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .song-title {
+    font-size: 20px;
+    color: white;
+    font-weight: 200px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+  }
+  
+  .song-artist {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .price{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    color: white;
+  }
+  
+  /* Media Queries for smaller screens */
+  @media (max-width: 768px) {
+    .card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
+  .order-btn-card {
+    background-color: #000000; /* Adjust background color */
+    color: #fff; /* Adjust text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Indicate clickable action */
+    margin-top: 10px; /* Add spacing from content */
+  }
+  
+  .order-btn-card:hover {
+    /* background-color: #3c3c3c; Change background color on hover */
+    
+  }
+/* Card Styles */
+.card {
+    /* ... existing styles ... */
+    /* position: relative; Required for animation positioning */
+    transition: transform 0.2s ease-in-out; /* Smooth transition for both hover and leave */
+  }
+  
+  /* Animation Styles */
+  @keyframes card-hover {
+    from { transform: scale(1); }
+    to { transform: scale(1.07); } /* Increase scale slightly on hover */
+  }
+  
+  .card:hover {
+    animation: card-hover 0.2s ease-in-out forwards; /* Trigger animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow on hover */
+  }
+  
+  /* Smoothly return to base state on hover out */
+  .card:not(:hover) {
+    animation: card-hover-out 0.2s ease-in-out forwards;
+  }
+  
+  @keyframes card-hover-out {
+    from { transform: scale(1.05); } /* Revert to initial scale */
+    to { transform: scale(1); }
+  }
+
+
+
+
+  
+  /* ---------------------------------------------------Cards----------------------------------------------------- */
+  .footer-container{
+    height: 340px;
+    width: 100%;
+    background-color: #ffd500;
+    position: relative;
+    justify-content: center;
+    display: flex; /* Use flexbox for layout responsiveness */
+    justify-content: space-between; /* Distribute items horizontally */
+    align-items: center; /* Align items vertically */
+  }
+  .Policies,
+.Frame11 {
+  width: 25%; /* Set initial width for both sections */
+}
+@media (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    .footer-container {
+      flex-direction: row; /* Stack sections vertically */
+      align-items: center; /* Center content vertically */
+    }
+  
+    .Policies,
+    .Frame11 {
+      width: 100%; /* Make sections full width on smaller screens */
+      top: 0;
+      right: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      transform: 0;
+    }
+  }
+  
+  /* Media Queries for Tablets (Optional) */
+  @media (max-width: 1024px) {
+    /* Adjust layout for tablet screens (optional) */
+    .Policies,
+    .Frame11 {
+      width: 40%; /* Adjust width for tablets if needed */
+    }
+  }
+  /* Policies Section */
+  .Policies {
+    width: 25%; /* Responsive width based on percentage */
+    height: auto; /* Responsive height */
+    position: absolute;
+    top: 50%;
+    left: 500px;
+    transform: translateY(-50%); /* Center vertically */
+  }
+  
+  .OurPolicies,
+  .AboutUs,
+  .FaqS,
+  .ContactUs,
+  .ShippingPolicy {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    word-wrap: break-word;
+    padding: 5px; /* Add padding for better spacing */
+  }
+  
+  .OurPolicies {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  
+  /* Frame11 Section */
+  .Frame11 {
+    width: 20%; /* Responsive width based on percentage */
+    height: auto; /* Responsive height */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    right: 500px; /* Align to the right */
+
+  }
+  
+  .ContactUs,
+  .EmailUs,
+  .FollowUs {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    word-wrap: break-word;
+    padding: 5px; /* Add padding for better spacing */
+  }
+  
+  .ContactUs {
+    font-size: 25px;
+    /* font-weight: 700; */
+  }
+  
+  .EmailUs {
+    text-decoration: underline;
+    /* font-weight: 700; */
+  }
+  
+  .FollowUs {
+    font-weight: 700;
+  }
+  
+  /* Copyright Section */
+  .CopyrightEProjectDesignByFareedBaig {
+    width: 100%; /* Full width */
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    /* font-family: Josefin Sans; */
+    font-weight: 500;
+    word-wrap: break-word;
+    background-color: #ffd500;
+    padding: 25px; /* Add padding for better spacing */
+  }
+  
+  /* Social Media Icons (adjust styles as needed) */
+  .IcBaselineFacebook,
+  .AkarIconsXFill,
+  .BiInstagram,
+  .IcOutlineEmail {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px; /* Adjust padding if needed */
+  }
+  
+  .Vector {
+    width: inherit; /* Inherit width from parent element */
+    height: inherit; /* Inherit height from parent element */
+    background: black;
+  }
